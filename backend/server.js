@@ -44,5 +44,19 @@ app.use('/api/products', productRoute)
 const PORT = process.env.PORT || 5000
 
 app.listen(PORT, () => {
-    console.log(`Server listening on port ${PORT}`)
-})
+        console.log(`Server listening on port ${PORT}`)
+    })
+    //creating variables
+mongoose.connect(
+    'mongodb+srv://poopiyo:<CarolBenson9160>@cluster0.stfxx.mongodb.net/?retryWrites=true&w=majority', {
+        useNewUrlParser: true,
+        useFindAndModify: false,
+        useUnifiedTopology: true
+    }
+);
+// confirming if connection was successful 
+
+db.on("error", console.error.bind(console, "connection error: "));
+db.once("open", function() {
+    console.log("Connected successfully");
+});
