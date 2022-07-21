@@ -21,3 +21,11 @@ Make sure that you have the following installed:
  `npm start`
 
  ### Go ahead a nd add a product (note that the price field only takes a numeric input)
+ 
+ ## Run the following command to creat a Docker-enabled VMs
+ 'docker-machine'
+ 'docker-machine create vm1'
+ 'docker-machine create vm2'
+ 'docker-machine create vm3'
+ 'docker-machine create vm4'
+ ##
